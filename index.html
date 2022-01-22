@@ -6,6 +6,10 @@
 <body>
 
 <a-scene>
+  <a-assets>
+	  <a-asset-item id="hamster-glb" src ="hamster.glb"  cross-origin="anonymous"></a-asset-item>
+  </a-assets>
+
   <a-text position="0 7 10" value="Anna Li annaleee" geometry="primitive:plane" color="black"></a-text>
 	<a-box position="0 1.5 3" depth="2" height="3" width="5" shadow></a-box>
 	<a-box position="2.3 0.5 7" depth="4" height="1" width="1.5" shadow></a-box>
@@ -13,8 +17,9 @@
   <a-box position="3 1 7" width="0.5" height="2" depth="4" shadow></a-box>
   <a-box position="-3 1 7" width="0.5" height="2" depth="4" shadow></a-box>
 	<a-box position="0 1 7" depth="4" height="0.5" width="1.5" color="red" shadow></a-box>  
-
   <a-plane position="0 0 5" rotation = "-90 0 0" height = "10" width = "10" color = "green" shadow></a-plane>
+  
+  <a-entity id="hamster" gltf-model="#hamster-glb"></a-entity>
   
   <a-camera position="0 5 20"></a-camera>
 
